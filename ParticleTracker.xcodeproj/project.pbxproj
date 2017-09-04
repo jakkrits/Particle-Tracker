@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3B5D7F89B874A0535659C16 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670750D388095023BC1ABE44 /* libPods.a */; };
+		E16392681CEABFCA00517BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16392671CEABFCA00517BE4 /* AppDelegate.swift */; };
+		E163926A1CEABFCA00517BE4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16392691CEABFCA00517BE4 /* MapViewController.swift */; };
+		E163926D1CEABFCA00517BE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E163926B1CEABFCA00517BE4 /* Main.storyboard */; };
+		E163926F1CEABFCA00517BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E163926E1CEABFCA00517BE4 /* Assets.xcassets */; };
+		E16392721CEABFCA00517BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16392701CEABFCA00517BE4 /* LaunchScreen.storyboard */; };
+		E163927D1CEABFCA00517BE4 /* ParticleTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E163927C1CEABFCA00517BE4 /* ParticleTrackerTests.swift */; };
+		E16392881CEABFCA00517BE4 /* ParticleTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16392871CEABFCA00517BE4 /* ParticleTrackerUITests.swift */; };
+		E16392B31CEAD6E200517BE4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16392B21CEAD6E200517BE4 /* FBSDKCoreKit.framework */; };
+		E16392B51CEAD78C00517BE4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16392B41CEAD78C00517BE4 /* Bolts.framework */; };
+		E16392B71CEAD79B00517BE4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16392B61CEAD79B00517BE4 /* FBSDKLoginKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E16392791CEABFCA00517BE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E163925C1CEABFCA00517BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E16392631CEABFCA00517BE4;
+			remoteInfo = ParticleTracker;
+		};
+		E16392841CEABFCA00517BE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E163925C1CEABFCA00517BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E16392631CEABFCA00517BE4;
+			remoteInfo = ParticleTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27F9D3E8D72845BABACFE83A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		28BA4B88E83971D22AAAE208 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		670750D388095023BC1ABE44 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16392641CEABFCA00517BE4 /* ParticleTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16392671CEABFCA00517BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E16392691CEABFCA00517BE4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E163926C1CEABFCA00517BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E163926E1CEABFCA00517BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E16392711CEABFCA00517BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E16392731CEABFCA00517BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16392781CEABFCA00517BE4 /* ParticleTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E163927C1CEABFCA00517BE4 /* ParticleTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleTrackerTests.swift; sourceTree = "<group>"; };
+		E163927E1CEABFCA00517BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16392831CEABFCA00517BE4 /* ParticleTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16392871CEABFCA00517BE4 /* ParticleTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleTrackerUITests.swift; sourceTree = "<group>"; };
+		E16392891CEABFCA00517BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16392AF1CEAD28C00517BE4 /* ParticleTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParticleTracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		E16392B21CEAD6E200517BE4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E16392B41CEAD78C00517BE4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		E16392B61CEAD79B00517BE4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E16392611CEABFCA00517BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16392B51CEAD78C00517BE4 /* Bolts.framework in Frameworks */,
+				C3B5D7F89B874A0535659C16 /* libPods.a in Frameworks */,
+				E16392B71CEAD79B00517BE4 /* FBSDKLoginKit.framework in Frameworks */,
+				E16392B31CEAD6E200517BE4 /* FBSDKCoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16392751CEABFCA00517BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16392801CEABFCA00517BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E163925B1CEABFCA00517BE4 = {
+			isa = PBXGroup;
+			children = (
+				E16392661CEABFCA00517BE4 /* ParticleTracker */,
+				E163927B1CEABFCA00517BE4 /* ParticleTrackerTests */,
+				E16392861CEABFCA00517BE4 /* ParticleTrackerUITests */,
+				E16392651CEABFCA00517BE4 /* Products */,
+				EAB766C8605D21EA544F9504 /* Pods */,
+				E4755A6D851C67F0A8BEE535 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E16392651CEABFCA00517BE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E16392641CEABFCA00517BE4 /* ParticleTracker.app */,
+				E16392781CEABFCA00517BE4 /* ParticleTrackerTests.xctest */,
+				E16392831CEABFCA00517BE4 /* ParticleTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E16392661CEABFCA00517BE4 /* ParticleTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E16392671CEABFCA00517BE4 /* AppDelegate.swift */,
+				E16392691CEABFCA00517BE4 /* MapViewController.swift */,
+				E163926B1CEABFCA00517BE4 /* Main.storyboard */,
+				E163926E1CEABFCA00517BE4 /* Assets.xcassets */,
+				E16392701CEABFCA00517BE4 /* LaunchScreen.storyboard */,
+				E16392731CEABFCA00517BE4 /* Info.plist */,
+				E16392AF1CEAD28C00517BE4 /* ParticleTracker-Bridging-Header.h */,
+			);
+			path = ParticleTracker;
+			sourceTree = "<group>";
+		};
+		E163927B1CEABFCA00517BE4 /* ParticleTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E163927C1CEABFCA00517BE4 /* ParticleTrackerTests.swift */,
+				E163927E1CEABFCA00517BE4 /* Info.plist */,
+			);
+			path = ParticleTrackerTests;
+			sourceTree = "<group>";
+		};
+		E16392861CEABFCA00517BE4 /* ParticleTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E16392871CEABFCA00517BE4 /* ParticleTrackerUITests.swift */,
+				E16392891CEABFCA00517BE4 /* Info.plist */,
+			);
+			path = ParticleTrackerUITests;
+			sourceTree = "<group>";
+		};
+		E4755A6D851C67F0A8BEE535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16392B61CEAD79B00517BE4 /* FBSDKLoginKit.framework */,
+				E16392B41CEAD78C00517BE4 /* Bolts.framework */,
+				E16392B21CEAD6E200517BE4 /* FBSDKCoreKit.framework */,
+				670750D388095023BC1ABE44 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAB766C8605D21EA544F9504 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27F9D3E8D72845BABACFE83A /* Pods.debug.xcconfig */,
+				28BA4B88E83971D22AAAE208 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E16392981CEAD1C600517BE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E16392631CEABFCA00517BE4 /* ParticleTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E163928C1CEABFCA00517BE4 /* Build configuration list for PBXNativeTarget "ParticleTracker" */;
+			buildPhases = (
+				3A935A0B8145978C9477707A /* Check Pods Manifest.lock */,
+				E16392601CEABFCA00517BE4 /* Sources */,
+				E16392611CEABFCA00517BE4 /* Frameworks */,
+				E16392621CEABFCA00517BE4 /* Resources */,
+				13729CBBCA220E74811DD1F9 /* Embed Pods Frameworks */,
+				9C9B132EFB38A9AA6438B7DC /* Copy Pods Resources */,
+				E16392981CEAD1C600517BE4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParticleTracker;
+			productName = ParticleTracker;
+			productReference = E16392641CEABFCA00517BE4 /* ParticleTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E16392771CEABFCA00517BE4 /* ParticleTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E163928F1CEABFCA00517BE4 /* Build configuration list for PBXNativeTarget "ParticleTrackerTests" */;
+			buildPhases = (
+				E16392741CEABFCA00517BE4 /* Sources */,
+				E16392751CEABFCA00517BE4 /* Frameworks */,
+				E16392761CEABFCA00517BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E163927A1CEABFCA00517BE4 /* PBXTargetDependency */,
+			);
+			name = ParticleTrackerTests;
+			productName = ParticleTrackerTests;
+			productReference = E16392781CEABFCA00517BE4 /* ParticleTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E16392821CEABFCA00517BE4 /* ParticleTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E16392921CEABFCA00517BE4 /* Build configuration list for PBXNativeTarget "ParticleTrackerUITests" */;
+			buildPhases = (
+				E163927F1CEABFCA00517BE4 /* Sources */,
+				E16392801CEABFCA00517BE4 /* Frameworks */,
+				E16392811CEABFCA00517BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E16392851CEABFCA00517BE4 /* PBXTargetDependency */,
+			);
+			name = ParticleTrackerUITests;
+			productName = ParticleTrackerUITests;
+			productReference = E16392831CEABFCA00517BE4 /* ParticleTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E163925C1CEABFCA00517BE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AppIllustrator;
+				TargetAttributes = {
+					E16392631CEABFCA00517BE4 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E16392771CEABFCA00517BE4 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E16392631CEABFCA00517BE4;
+					};
+					E16392821CEABFCA00517BE4 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E16392631CEABFCA00517BE4;
+					};
+				};
+			};
+			buildConfigurationList = E163925F1CEABFCA00517BE4 /* Build configuration list for PBXProject "ParticleTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E163925B1CEABFCA00517BE4;
+			productRefGroup = E16392651CEABFCA00517BE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E16392631CEABFCA00517BE4 /* ParticleTracker */,
+				E16392771CEABFCA00517BE4 /* ParticleTrackerTests */,
+				E16392821CEABFCA00517BE4 /* ParticleTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E16392621CEABFCA00517BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16392721CEABFCA00517BE4 /* LaunchScreen.storyboard in Resources */,
+				E163926F1CEABFCA00517BE4 /* Assets.xcassets in Resources */,
+				E163926D1CEABFCA00517BE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16392761CEABFCA00517BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16392811CEABFCA00517BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13729CBBCA220E74811DD1F9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A935A0B8145978C9477707A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C9B132EFB38A9AA6438B7DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E16392601CEABFCA00517BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E163926A1CEABFCA00517BE4 /* MapViewController.swift in Sources */,
+				E16392681CEABFCA00517BE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16392741CEABFCA00517BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E163927D1CEABFCA00517BE4 /* ParticleTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E163927F1CEABFCA00517BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16392881CEABFCA00517BE4 /* ParticleTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E163927A1CEABFCA00517BE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E16392631CEABFCA00517BE4 /* ParticleTracker */;
+			targetProxy = E16392791CEABFCA00517BE4 /* PBXContainerItemProxy */;
+		};
+		E16392851CEABFCA00517BE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E16392631CEABFCA00517BE4 /* ParticleTracker */;
+			targetProxy = E16392841CEABFCA00517BE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E163926B1CEABFCA00517BE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E163926C1CEABFCA00517BE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E16392701CEABFCA00517BE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E16392711CEABFCA00517BE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E163928A1CEABFCA00517BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E163928B1CEABFCA00517BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E163928D1CEABFCA00517BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F9D3E8D72845BABACFE83A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/jakkrit/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = ParticleTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appillustrator.ParticleTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParticleTracker/ParticleTracker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E163928E1CEABFCA00517BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28BA4B88E83971D22AAAE208 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/jakkrit/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = ParticleTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appillustrator.ParticleTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParticleTracker/ParticleTracker-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		E16392901CEABFCA00517BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ParticleTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appillustrator.ParticleTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParticleTracker.app/ParticleTracker";
+			};
+			name = Debug;
+		};
+		E16392911CEABFCA00517BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ParticleTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appillustrator.ParticleTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParticleTracker.app/ParticleTracker";
+			};
+			name = Release;
+		};
+		E16392931CEABFCA00517BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ParticleTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appillustrator.ParticleTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ParticleTracker;
+			};
+			name = Debug;
+		};
+		E16392941CEABFCA00517BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ParticleTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appillustrator.ParticleTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ParticleTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E163925F1CEABFCA00517BE4 /* Build configuration list for PBXProject "ParticleTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E163928A1CEABFCA00517BE4 /* Debug */,
+				E163928B1CEABFCA00517BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E163928C1CEABFCA00517BE4 /* Build configuration list for PBXNativeTarget "ParticleTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E163928D1CEABFCA00517BE4 /* Debug */,
+				E163928E1CEABFCA00517BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E163928F1CEABFCA00517BE4 /* Build configuration list for PBXNativeTarget "ParticleTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E16392901CEABFCA00517BE4 /* Debug */,
+				E16392911CEABFCA00517BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E16392921CEABFCA00517BE4 /* Build configuration list for PBXNativeTarget "ParticleTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E16392931CEABFCA00517BE4 /* Debug */,
+				E16392941CEABFCA00517BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E163925C1CEABFCA00517BE4 /* Project object */;
+}
